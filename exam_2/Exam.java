@@ -102,6 +102,7 @@ public class Exam {
         String surName = scan.next();  
         int Stringsize= surName.length();
         System.out.println("The number of characters your surname is: " + Stringsize);
+        System.out.println("The total length of your fullname is " + (Stringsize + stringSize));
 
         }
 
@@ -214,11 +215,11 @@ public class Exam {
         String specializationIT = scan.next();
         switch (specializationIT){
             case "MWA":
-            System.out.println("You're a BSIT-MWA student");
+            System.out.println("valid");
             break;
 
             case "MAA":
-            System.out.println("You're a BSIT-MAA student");
+            System.out.println("valid");
             break;
             
             default:
@@ -233,11 +234,11 @@ public class Exam {
         String specializationCS = scan.next();
         switch (specializationCS){
             case "ML":
-            System.out.println("You're a BSCS-ML student");
+            System.out.println("valid");
             break;
 
             case "DF":
-            System.out.println("You're a BSCS-DF student");
+            System.out.println("valid");
             break;
 
             default:
@@ -319,7 +320,7 @@ public class Exam {
         System.out.print("Enter your student email address: ");
         String studentEmailAddress = scan.next();
 
-        if (studentEmailAddress.contains("saliendra")) {
+        if (studentEmailAddress.contains("saliendra") && studentEmailAddress.contains("@student.national-u.edu.ph")) {
         System.out.println("valid");
 
         } else {
